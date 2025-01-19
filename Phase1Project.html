@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Meal Planner</title>
+  <link rel="stylesheet" href="Phase1Project.css">
+  <script defer src="Phase1Project.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Random Meal Planner</h1>
+  </header>
+  <main>
+    <section id="user-info">
+      <h2>Enter Your Name</h2>
+      <input type="text" id="user-name" placeholder="Your Name" />
+    </section>
+
+    <section id="meal-selection">
+      <h2>Select Up to 7 Meals</h2>
+      <div class="selectable-box" data-meal="1">Meal 1</div>
+      <div class="selectable-box" data-meal="2">Meal 2</div>
+      <div class="selectable-box" data-meal="3">Meal 3</div>
+      <div class="selectable-box" data-meal="4">Meal 4</div>
+      <div class="selectable-box" data-meal="5">Meal 5</div>
+      <div class="selectable-box" data-meal="6">Meal 6</div>
+      <div class="selectable-box" data-meal="7">Meal 7</div>
+    </section>
+
+    <button id="generate-plan">Generate Meal Plan</button>
+
+    <section id="meal-plan">
+      <h2>Meal Plan</h2>
+      <ul id="recipe-list"></ul>
+    </section>
+
+    <section id="cooking-instructions">
+      <h2 id="instructions-header" style="display: none;">Cooking Instructions</h2>
+      <div id="instructions"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Random Meal Planner</p>
+  </footer>
+</body>
+</html>

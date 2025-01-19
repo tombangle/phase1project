@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+#user-info input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.selectable-box {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.selectable-box:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(1.05);
+}
+
+.selectable-box.selected {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+#generate-plan {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+#generate-plan:hover {
+  background-color: #333;
+}
+
+#meal-plan {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.details-button {
+  margin-left: auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #333;
+}
+
+.print-button {
+  margin-left: 10px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.print-button:hover {
+  background-color: #0b7dda;
+}
+
+#instructions-header {
+  margin-top: 2rem;
+  display: none; /* Initially hidden */
+}
+
+#instructions {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+#instructions ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#instructions ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
